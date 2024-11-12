@@ -16,5 +16,5 @@ layout.addWidget(label)
 window.setLayout(layout)
 window.show()
 
-# Ejecutar la aplicación
+# Ejecutar la aplicación solo para ver si funciona xd
 app.exec_()
