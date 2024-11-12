@@ -1,12 +1,12 @@
 # main.py
 import tkinter as tk
 from tkinter import messagebox
-from auth import auth_google, auth_local
+from auth import auth_google, auth_mongo
 
 def login_local():
     email = entry_email.get()
     password = entry_password.get()
-    user = auth_local.verificar_usuario(email, password)
+    user = auth_mongo.verificar_usuario(email, password)
     if user:
         messagebox.showinfo("Inicio de Sesión", f"Bienvenido, {user['role']}")
         abrir_dashboard(user["role"])
